@@ -2,67 +2,48 @@ body{
 
 font-family:Arial;
 text-align:center;
-background:#f2f2f2;
+background:#f4f4f4;
 
 }
 
-#container{
+h1{
+
+margin-top:20px;
+
+}
+
+#game{
 
 position:relative;
 display:inline-block;
 
 }
 
-img{
+#img{
 
 width:1200px;
 
 }
 
-.label{
+input{
 
 position:absolute;
-width:120px;
-font-size:12px;
+width:130px;
 padding:3px;
+font-size:12px;
 
 }
 
-/* COORDENADAS */
+#controls{
 
-#frontal{top:20px;left:120px;}
-#nasal{top:40px;left:120px;}
-#pomul{top:60px;left:120px;}
-#mandibula{top:80px;left:120px;}
+margin-top:20px;
 
-#estern{top:160px;left:180px;}
-#costelles{top:190px;left:180px;}
-
-#columna{top:220px;left:210px;}
-
-#ili{top:260px;left:200px;}
-#pubis{top:280px;left:200px;}
-#isqui{top:300px;left:200px;}
-
-#femur{top:330px;left:200px;}
-#rotula{top:360px;left:200px;}
-#tibia{top:390px;left:200px;}
-#perone{top:410px;left:200px;}
-
-#trapeci{top:90px;left:900px;}
-#deltoides{top:150px;left:930px;}
-#triceps{top:200px;left:930px;}
-
-#pectorals{top:200px;left:650px;}
-#biceps{top:240px;left:650px;}
-
-#gluti{top:350px;left:920px;}
-#bessons{top:440px;left:920px;}
+}
 
 button{
 
-margin:10px;
 padding:10px 20px;
+margin:5px;
 font-size:16px;
 cursor:pointer;
 
