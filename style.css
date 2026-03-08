@@ -1,49 +1,51 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     text-align: center;
-    background-color: #f0f2f5;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 20px;
 }
 
 .score-container {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    background: white;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 .quiz-container {
-    position: relative;
+    position: relative; /* Això fa que els inputs se situïn sobre la imatge */
     display: inline-block;
-    border: 2px solid #ddd;
-    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .quiz-container img {
     display: block;
-    /* Mantenim la mida original per a les coordenades */
+    max-width: none; /* Perquè no escali i les coordenades siguin exactes */
 }
 
 .input-box {
     position: absolute;
-    width: 75px;
+    width: 68px;
     height: 18px;
-    font-size: 11px;
-    border: 1px solid #999;
+    font-size: 10px;
+    border: 1px solid #888;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.85);
-    transform: translate(-50%, -50%);
-    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    outline: none;
 }
 
 .input-box.correct {
     background-color: #d4edda;
     border-color: #28a745;
     color: #155724;
+    font-weight: bold;
 }
 
 .input-box.incorrect {
@@ -56,19 +58,19 @@ body {
 }
 
 button {
-    padding: 12px 24px;
+    padding: 10px 20px;
     margin: 5px;
-    font-weight: bold;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
+    border-radius: 4px;
+    background-color: #444;
     color: white;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #222;
 }
 
-#btn-reiniciar { background-color: #6c757d; }
-#btn-respostes { background-color: #17a2b8; }
+#btn-comprovar { background-color: #007bff; }
+#btn-comprovar:hover { background-color: #0056b3; }
