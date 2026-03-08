@@ -84,7 +84,7 @@ color:white;
 }
 
 body.dark button:hover{
-background:#ff7a00;
+background:#e28a3b;
 }
 
 /* SCORE */
@@ -107,7 +107,7 @@ transition:transform .25s;
 }
 
 #themeToggle:hover{
-transform:rotate(20deg) scale(1.1);
+transform:scale(1.15);
 }
 
 #themeToggle svg{
@@ -158,23 +158,19 @@ display:block;
 height:3px;
 background:black;
 border-radius:2px;
-transition:.4s;
+transition:.25s;
 }
 
 body.dark #menuButton span{
 background:white;
 }
 
-#menuButton.active span:nth-child(1){
-transform:rotate(45deg) translateY(8px);
+#menuButton:hover span{
+background:#555;
 }
 
-#menuButton.active span:nth-child(2){
-opacity:0;
-}
-
-#menuButton.active span:nth-child(3){
-transform:rotate(-45deg) translateY(-8px);
+body.dark #menuButton:hover span{
+background:#e28a3b;
 }
 
 /* MENU PANEL */
