@@ -3,25 +3,19 @@ font-family:"Segoe UI",Arial;
 text-align:center;
 background:#f4f4f4;
 color:#111;
-transition:background 0.5s,color 0.5s;
+transition:background .5s,color .5s;
 }
-
-/* DARK MODE */
 
 body.dark{
 background:#121212;
 color:white;
 }
 
-/* IMAGE */
-
 #img{
 width:1200px;
 display:block;
-border-radius:8px;
+border-radius:10px;
 }
-
-/* GAME */
 
 #game{
 position:relative;
@@ -51,11 +45,7 @@ padding:0;
 background:white;
 color:black;
 outline:none;
-transition:all .25s;
-}
-
-input:focus{
-border-color:black;
+transition:.25s;
 }
 
 body.dark input{
@@ -71,23 +61,21 @@ margin-top:20px;
 }
 
 button{
-padding:12px 26px;
-margin:10px;
+padding:14px 28px;
+margin:12px;
 font-size:16px;
 cursor:pointer;
-
 border-radius:8px;
 border:2px solid transparent;
-
-background:#eee;
+background:#eaeaea;
 color:#111;
-
 transition:all .25s;
 }
 
 button:hover{
 background:black;
 color:white;
+transform:translateY(-2px);
 }
 
 body.dark button{
@@ -97,7 +85,6 @@ color:white;
 
 body.dark button:hover{
 background:#ff7a00;
-color:white;
 }
 
 /* SCORE */
@@ -113,9 +100,14 @@ margin:12px;
 position:fixed;
 top:15px;
 left:15px;
-width:36px;
-height:36px;
+width:38px;
+height:38px;
 cursor:pointer;
+transition:transform .25s;
+}
+
+#themeToggle:hover{
+transform:rotate(20deg) scale(1.1);
 }
 
 #themeToggle svg{
@@ -147,14 +139,14 @@ opacity:1;
 transform:rotate(0deg);
 }
 
-/* MENU BUTTON */
+/* MENU */
 
 #menuButton{
 position:fixed;
 top:15px;
 right:15px;
-width:32px;
-height:22px;
+width:34px;
+height:24px;
 cursor:pointer;
 display:flex;
 flex-direction:column;
@@ -166,11 +158,23 @@ display:block;
 height:3px;
 background:black;
 border-radius:2px;
-transition:.3s;
+transition:.4s;
 }
 
 body.dark #menuButton span{
 background:white;
+}
+
+#menuButton.active span:nth-child(1){
+transform:rotate(45deg) translateY(8px);
+}
+
+#menuButton.active span:nth-child(2){
+opacity:0;
+}
+
+#menuButton.active span:nth-child(3){
+transform:rotate(-45deg) translateY(-8px);
 }
 
 /* MENU PANEL */
@@ -180,18 +184,21 @@ position:fixed;
 top:55px;
 right:15px;
 background:white;
-padding:10px;
-border-radius:8px;
-box-shadow:0 4px 15px rgba(0,0,0,.2);
-display:none;
+padding:12px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,.25);
+opacity:0;
+transform:translateY(-10px);
+pointer-events:none;
+transition:.3s;
+}
+
+#menuPanel.open{
+opacity:1;
+transform:translateY(0);
+pointer-events:auto;
 }
 
 body.dark #menuPanel{
 background:#2a2a2a;
-}
-
-#menuPanel button{
-margin:0;
-font-size:14px;
-padding:8px 14px;
 }
