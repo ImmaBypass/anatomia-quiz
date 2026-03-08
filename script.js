@@ -91,12 +91,12 @@ container.appendChild(input);
 
 function autoResize(e){
 
-let el=e.target;
+let el = e.target;
 
-el.style.width="42px";
+el.style.width = "42px";
 
-if(el.value.length>6){
-el.style.width=(el.value.length*6)+"px";
+if(el.value.length > 6){
+el.style.width = (42 + (el.value.length-6)*6) + "px";
 }
 
 }
