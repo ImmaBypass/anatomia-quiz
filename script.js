@@ -81,9 +81,6 @@ let input=document.createElement("input");
 input.style.left=l.x+"px";
 input.style.top=l.y+"px";
 
-input.style.width="42px";   
-input.style.height="14px";
-
 input.id="q"+i;
 
 input.addEventListener("input",autoResize);
@@ -96,10 +93,11 @@ function autoResize(e){
 
 let el=e.target;
 
-let base = 42;
-let extra = el.value.length * 5;
+el.style.width="42px";
 
-el.style.width = Math.max(base, extra) + "px";
+if(el.value.length>6){
+el.style.width=(el.value.length*6)+"px";
+}
 
 }
 
@@ -154,6 +152,10 @@ labels.forEach((l,i)=>{
 let el=document.getElementById("q"+i);
 el.value=l.name;
 autoResize({target:el});
+
+});
+
+}
 
 });
 
