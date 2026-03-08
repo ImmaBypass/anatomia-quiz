@@ -25,13 +25,23 @@ width:1200px;
 
 }
 
+#inputs{
+
+position:absolute;
+top:0;
+left:0;
+
+}
+
 input{
 
 position:absolute;
-padding:3px;
-font-size:12px;
 
-}
+width:42.6px;
+height:12.6px;
+
+font-size:10px;
+padding:1px;
 
 }
 
