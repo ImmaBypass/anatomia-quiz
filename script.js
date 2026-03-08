@@ -29,23 +29,23 @@ const labels = [
 {x:299,y:281,name:"Húmer"},
 {x:298,y:304,name:"Radi"},
 
-{x:479,y:140,name:"Orbicular de l'ull"},
-{x:485,y:173,name:"Temporal"},
-{x:486,y:204,name:"Masseter"},
-{x:478,y:267,name:"Orbicular dels llavis"},
-{x:487,y:289,name:"Digàstric"},
-{x:493,y:317,name:"Serrat"},
-{x:492,y:349,name:"Bíceps braquial"},
-{x:487,y:383,name:"Supinador"},
+{x:479,y:140,name:"Nassals"},
+{x:485,y:173,name:"Frontal"},
+{x:486,y:204,name:"Orbicular de l'ull"},
+{x:478,y:267,name:"Temporal"},
+{x:487,y:289,name:"Masseter"},
+{x:493,y:317,name:"Buccinador"},
+{x:492,y:349,name:"Orbicular dels llavis"},
+{x:487,y:383,name:"Digàstric"},
 
-{x:614,y:37,name:"Nassals"},
-{x:609,y:70,name:"Frontal"},
-{x:627,y:103,name:"Orbicular de l'ull"},
-{x:609,y:145,name:"Temporal"},
-{x:606,y:183,name:"Masseter"},
-{x:617,y:219,name:"Buccinador"},
-{x:612,y:259,name:"Pectorals"},
-{x:617,y:375,name:"Recte anterior"},
+{x:614,y:37,name:"Serrat"},
+{x:609,y:70,name:"Bíceps braquial"},
+{x:627,y:103,name:"Supinador"},
+{x:609,y:145,name:"Pectorals"},
+{x:606,y:183,name:"Recte anterior"},
+{x:617,y:219,name:"Oblic major"},
+{x:612,y:259,name:"Psoes ilíac"},
+{x:617,y:375,name:"Sartori"},
 {x:618,y:498,name:"Tibial"},
 
 {x:791,y:30,name:"Esternocleidomastoïdal"},
@@ -83,9 +83,23 @@ input.style.top=l.y+"px";
 
 input.id="q"+i;
 
+input.addEventListener("input",autoResize);
+
 container.appendChild(input);
 
 });
+
+function autoResize(e){
+
+let el=e.target;
+
+el.style.width="42px";
+
+if(el.value.length>6){
+el.style.width=(el.value.length*6)+"px";
+}
+
+}
 
 function normalize(t){
 return t
@@ -123,6 +137,7 @@ labels.forEach((l,i)=>{
 let input=document.getElementById("q"+i);
 input.value="";
 input.style.background="white";
+input.style.width="42px";
 
 });
 
@@ -134,7 +149,9 @@ function showAnswers(){
 
 labels.forEach((l,i)=>{
 
-document.getElementById("q"+i).value=l.name;
+let el=document.getElementById("q"+i);
+el.value=l.name;
+autoResize({target:el});
 
 });
 
