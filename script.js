@@ -135,8 +135,6 @@ let input=document.getElementById("q"+i);
 input.value="";
 input.style.width="42px";
 
-/* FIX DARK MODE */
-
 if(document.body.classList.contains("dark")){
 input.style.background="#2a2a2a";
 }else{
@@ -163,9 +161,7 @@ autoResize({target:el});
 
 /* THEME */
 
-const themeToggle=document.getElementById("themeToggle");
-
-themeToggle.onclick=()=>{
+document.getElementById("themeToggle").onclick=()=>{
 document.body.classList.toggle("dark");
 };
 
@@ -175,12 +171,11 @@ const menuBtn=document.getElementById("menuButton");
 const menuPanel=document.getElementById("menuPanel");
 
 menuBtn.onclick=()=>{
-menuBtn.classList.toggle("active");
 menuPanel.classList.toggle("open");
 };
 
 /* EMAIL */
 
-document.getElementById("suggestBtn").onclick=()=>{
-window.location.href="mailto:samuelgil@vedrunaimmaculada.cat?subject=Sugerencia%20Quiz%20Anatomia";
-};
+document.getElementById("suggestBtn").addEventListener("click",function(){
+window.open("mailto:samuelgil@vedrunaimmaculada.cat?subject=Sugerencia%20Quiz%20Anatomia","_self");
+});
