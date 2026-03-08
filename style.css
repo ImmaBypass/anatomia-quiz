@@ -1,5 +1,3 @@
-/* style.css */
-
 body {
   font-family: Arial;
   text-align: center;
@@ -12,11 +10,14 @@ h1 {
 
 #game {
   position: relative;
-  display: inline-block;
+  display: inline-block; /* centra el bloque de la imagen */
+  /* el tamaño del contenedor se ajusta a la imagen automáticamente */
 }
 
 #img {
-  width: 1200px;
+  width: 1200px;  /* ancho fijo que quieres */
+  height: auto;   /* mantener proporciones */
+  display: block; /* elimina espacio debajo de la imagen */
 }
 
 #inputs {
@@ -27,15 +28,15 @@ h1 {
 
 input {
   position: absolute;
-  width: 42.6px;          
-  height: 12.6px;        
+  width: 42.6px;
+  height: 12.6px;
   font-size: 10px;
-  line-height: 12.6px;   
-  padding: 0;              
+  line-height: 12.6px;
+  padding: 0;
   margin: 0;
-  border: 1px solid #000;  
-  box-sizing: border-box;  
-  -webkit-appearance: none; 
+  border: 1px solid #000;
+  box-sizing: border-box;
+  -webkit-appearance: none;
   appearance: none;
 }
 
