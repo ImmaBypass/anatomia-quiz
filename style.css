@@ -15,7 +15,7 @@ h1 {
 }
 
 #img {
-  width: 1200px;  /* ancho fijo que quieres */
+  width: 527px;  /* ancho fijo que quieres */
   height: auto;   /* mantener proporciones */
   display: block; /* elimina espacio debajo de la imagen */
 }
