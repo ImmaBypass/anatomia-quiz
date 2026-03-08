@@ -1,4 +1,4 @@
-const labels = [
+const labels=[
 
 {x:210,y:37,name:"Frontal"},
 {x:210,y:56,name:"Nassal"},
@@ -72,7 +72,7 @@ const labels = [
 
 ];
 
-const container = document.getElementById("inputs");
+const container=document.getElementById("inputs");
 
 labels.forEach((l,i)=>{
 
@@ -91,21 +91,18 @@ container.appendChild(input);
 
 function autoResize(e){
 
-let el = e.target;
+let el=e.target;
 
-el.style.width = "42px";
+el.style.width="42px";
 
-if(el.value.length > 6){
-el.style.width = (42 + (el.value.length-6)*6) + "px";
+if(el.value.length>6){
+el.style.width=(42+(el.value.length-6)*6)+"px";
 }
 
 }
 
 function normalize(t){
-return t
-.toLowerCase()
-.normalize("NFD")
-.replace(/[\u0300-\u036f]/g,"");
+return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 }
 
 function checkAnswers(){
@@ -136,8 +133,15 @@ labels.forEach((l,i)=>{
 
 let input=document.getElementById("q"+i);
 input.value="";
-input.style.background="white";
 input.style.width="42px";
+
+/* FIX DARK MODE */
+
+if(document.body.classList.contains("dark")){
+input.style.background="#2a2a2a";
+}else{
+input.style.background="white";
+}
 
 });
 
@@ -162,9 +166,7 @@ autoResize({target:el});
 const themeToggle=document.getElementById("themeToggle");
 
 themeToggle.onclick=()=>{
-
 document.body.classList.toggle("dark");
-
 };
 
 /* MENU */
@@ -173,16 +175,12 @@ const menuBtn=document.getElementById("menuButton");
 const menuPanel=document.getElementById("menuPanel");
 
 menuBtn.onclick=()=>{
-
-menuPanel.style.display=
-menuPanel.style.display==="block" ? "none" : "block";
-
+menuBtn.classList.toggle("active");
+menuPanel.classList.toggle("open");
 };
 
-/* SUGGEST */
+/* EMAIL */
 
 document.getElementById("suggestBtn").onclick=()=>{
-
-window.location.href="mailto:samuelgil@vedrunaimmaculada.cat";
-
+window.location.href="mailto:samuelgil@vedrunaimmaculada.cat?subject=Sugerencia%20Quiz%20Anatomia";
 };
