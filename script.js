@@ -157,10 +157,32 @@ autoResize({target:el});
 
 }
 
-const toggle=document.getElementById("themeToggle");
+/* THEME */
 
-toggle.addEventListener("click",()=>{
+const themeToggle=document.getElementById("themeToggle");
+
+themeToggle.onclick=()=>{
 
 document.body.classList.toggle("dark");
 
-});
+};
+
+/* MENU */
+
+const menuBtn=document.getElementById("menuButton");
+const menuPanel=document.getElementById("menuPanel");
+
+menuBtn.onclick=()=>{
+
+menuPanel.style.display=
+menuPanel.style.display==="block" ? "none" : "block";
+
+};
+
+/* SUGGEST */
+
+document.getElementById("suggestBtn").onclick=()=>{
+
+window.location.href="mailto:samuelgil@vedrunaimmaculada.cat";
+
+};
