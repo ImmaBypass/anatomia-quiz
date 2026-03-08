@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Anatomia</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Quiz d'Anatomia</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Quiz Musculs i Ossos</h1>
-    <div class="score-container">Puntuació: <span id="score">0</span> / 64</div>
+<h1>Quiz Musculs i Ossos</h1>
+<div id="score">Puntuació: 0</div>
 
-    <div class="main-wrapper">
-        <div class="quiz-container" id="quiz-container">
-            <img src="anatomia.png" alt="Anatomia">
-            </div>
-    </div>
+<div id="game">
+<img src="anatomia.png" id="img">
+<div id="inputs"></div>
+</div>
 
-    <div class="controls">
-        <button id="btn-comprovar">Comprovar</button>
-        <button id="btn-reiniciar">Reiniciar</button>
-        <button id="btn-respostes">Veure respostes</button>
-    </div>
+<div id="controls">
+<button onclick="checkAnswers()">Comprovar</button>
+<button onclick="resetQuiz()">Reiniciar</button>
+<button onclick="showAnswers()">Veure respostes</button>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
