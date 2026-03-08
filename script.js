@@ -89,8 +89,11 @@ labels.forEach((l,i)=>{
 
 let input = document.createElement("input");
 
-input.style.left = (l.x * scaleX) + "px";
-input.style.top = (l.y * scaleY) + "px";
+const offsetX = 22.92;
+const offsetY = -2.70;
+
+input.style.left = (l.x - offsetX) + "px";
+input.style.top = (l.y - offsetY) + "px";
 
 input.id="q"+i;
 
