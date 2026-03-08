@@ -1,74 +1,74 @@
 const labels = [
 
-{x:210,y:37,name:"Frontal"},
-{x:210,y:56,name:"Nassal"},
-{x:209,y:78,name:"Pòmul"},
-{x:208,y:98,name:"Mandíbula"},
-{x:212,y:155,name:"Estern"},
-{x:204,y:189,name:"Costelles"},
-{x:196,y:223,name:"Columna vertebral"},
-{x:196,y:245,name:"Sacre"},
-{x:191,y:273,name:"Ili"},
-{x:247,y:294,name:"Pubis"},
-{x:190,y:295,name:"Isqui"},
-{x:189,y:316,name:"Coxal"},
-{x:193,y:381,name:"Fèmur"},
-{x:198,y:439,name:"Ròtula"},
-{x:196,y:473,name:"Tíbia"},
-{x:194,y:507,name:"Peroné"},
-{x:193,y:540,name:"Ossos del tars"},
-{x:193,y:567,name:"Metatars"},
-{x:191,y:600,name:"Falanges"},
+{x:130,y:40,name:"Frontal"},
+{x:130,y:60,name:"Nassal"},
+{x:130,y:80,name:"Pòmul"},
+{x:130,y:100,name:"Mandíbula"},
+{x:140,y:160,name:"Estern"},
+{x:140,y:195,name:"Costelles"},
+{x:140,y:225,name:"Columna vertebral"},
+{x:140,y:250,name:"Sacre"},
+{x:140,y:275,name:"Ili"},
+{x:185,y:295,name:"Pubis"},
+{x:140,y:300,name:"Isqui"},
+{x:140,y:320,name:"Coxal"},
+{x:145,y:385,name:"Fèmur"},
+{x:145,y:445,name:"Ròtula"},
+{x:145,y:480,name:"Tíbia"},
+{x:145,y:515,name:"Peroné"},
+{x:145,y:545,name:"Ossos del tars"},
+{x:145,y:575,name:"Metatars"},
+{x:145,y:605,name:"Falanges"},
 
-{x:289,y:38,name:"Parietal"},
-{x:289,y:60,name:"Temporal"},
-{x:289,y:77,name:"Occipital"},
-{x:289,y:105,name:"Vèrtebres cervicals"},
-{x:287,y:171,name:"Clavícula"},
-{x:294,y:243,name:"Omòplat"},
-{x:299,y:281,name:"Húmer"},
-{x:298,y:304,name:"Radi"},
+{x:250,y:40,name:"Parietal"},
+{x:250,y:60,name:"Temporal"},
+{x:250,y:80,name:"Occipital"},
+{x:250,y:110,name:"Vèrtebres cervicals"},
+{x:255,y:175,name:"Vèrtebres dorsals"},
+{x:260,y:245,name:"Vèrtebres lumbars"},
+{x:265,y:285,name:"Sacre"},
+{x:265,y:310,name:"Coccix"},
 
-{x:479,y:140,name:"Nassals"},
-{x:485,y:173,name:"Frontal"},
-{x:486,y:204,name:"Orbicular de l'ull"},
-{x:478,y:267,name:"Temporal"},
-{x:487,y:289,name:"Masseter"},
-{x:493,y:317,name:"Buccinador"},
-{x:492,y:349,name:"Orbicular dels llavis"},
-{x:487,y:383,name:"Digàstric"},
+{x:405,y:145,name:"Clavícula"},
+{x:410,y:180,name:"Omòplat"},
+{x:410,y:210,name:"Húmer"},
+{x:630,y:60,name:"Temporal"},
+{x:630,y:90,name:"Masseter"},
+{x:630,y:120,name:"Buccinador"},
+{x:630,y:150,name:"Orbicular dels llavis"},
+{x:630,y:180,name:"Digàstric"},
 
-{x:614,y:37,name:"Serrat"},
-{x:609,y:70,name:"Bíceps braquial"},
-{x:627,y:103,name:"Supinador"},
-{x:609,y:145,name:"Pectorals"},
-{x:606,y:183,name:"Recte anterior"},
-{x:617,y:219,name:"Oblic major"},
-{x:612,y:259,name:"Psoes ilíac"},
-{x:617,y:375,name:"Sartori"},
-{x:618,y:498,name:"Tibial"},
+{x:610,y:40,name:"Serrat"},
+{x:600,y:75,name:"Bíceps braquial"},
+{x:620,y:110,name:"Supinador"},
+{x:600,y:150,name:"Pectorals"},
+{x:600,y:190,name:"Recte anterior"},
+{x:610,y:225,name:"Oblic major"},
+{x:605,y:265,name:"Psoes ilíac"},
+{x:610,y:380,name:"Sartori"},
+{x:610,y:505,name:"Tibial"},
 
-{x:791,y:30,name:"Esternocleidomastoïdal"},
-{x:791,y:64,name:"Trapezi"},
-{x:792,y:99,name:"Deltoides"},
-{x:792,y:140,name:"Tríceps"},
-{x:795,y:182,name:"Dorsal ample"},
-{x:792,y:222,name:"Palmar"},
-{x:791,y:267,name:"Flexors i extensors"},
-{x:792,y:301,name:"Gluti"},
-{x:792,y:352,name:"Bíceps femoral"},
-{x:795,y:555,name:"Bessons"},
+{x:780,y:35,name:"Esternocleidomastoïdal"},
+{x:770,y:70,name:"Orbicular de l'ull"},
+{x:770,y:105,name:"Deltoides"},
+{x:770,y:145,name:"Tríceps"},
+{x:770,y:185,name:"Dorsal ample"},
+{x:770,y:225,name:"Palmar"},
+{x:770,y:270,name:"Flexors i extensors"},
+{x:770,y:305,name:"Gluti"},
+{x:770,y:355,name:"Bíceps femoral"},
+{x:770,y:560,name:"Bessons"},
 
-{x:1034,y:48,name:"Trapezi"},
-{x:1040,y:93,name:"Deltoides"},
-{x:1036,y:137,name:"Tríceps"},
-{x:1035,y:175,name:"Dorsal ample"},
-{x:1041,y:209,name:"Palmar"},
-{x:1043,y:251,name:"Flexors i extensors"},
-{x:1047,y:289,name:"Gluti"},
-{x:1044,y:348,name:"Bíceps femoral"},
-{x:1037,y:400,name:"Bessons"},
-{x:1044,y:485,name:"Tendó d'Aquil·les"}
+{x:1015,y:55,name:"Trapezi"},
+{x:1015,y:100,name:"Deltoides"},
+{x:1015,y:140,name:"Tríceps"},
+{x:1015,y:180,name:"Dorsal ample"},
+{x:1015,y:215,name:"Palmar"},
+{x:1015,y:255,name:"Flexors i extensors"},
+{x:1015,y:295,name:"Gluti"},
+{x:1015,y:355,name:"Bíceps femoral"},
+{x:1015,y:410,name:"Bessons"},
+{x:1015,y:495,name:"Tendó d'Aquil·les"}
 
 ];
 
@@ -80,6 +80,9 @@ let input=document.createElement("input");
 
 input.style.left=l.x+"px";
 input.style.top=l.y+"px";
+
+input.style.width="42px";   
+input.style.height="14px";
 
 input.id="q"+i;
 
@@ -93,11 +96,10 @@ function autoResize(e){
 
 let el=e.target;
 
-el.style.width="42px";
+let base = 42;
+let extra = el.value.length * 5;
 
-if(el.value.length>6){
-el.style.width=(el.value.length*6)+"px";
-}
+el.style.width = Math.max(base, extra) + "px";
 
 }
 
