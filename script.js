@@ -1,78 +1,40 @@
 const labels = [
 
-{x:192,y:40,name:"Frontal"},
-{x:190,y:62,name:"Nasal"},
-{x:192,y:88,name:"Pòmiul"},
-{x:185,y:109,name:"Mandíbula"},
-{x:191,y:169,name:"Estern"},
-{x:187,y:205,name:"Costelles"},
-{x:187,y:236,name:"Columna vertebral"},
-{x:193,y:263,name:"Sacre"},
-{x:189,y:292,name:"Ilí"},
-{x:230,y:313,name:"Pubis"},
-{x:195,y:315,name:"Coxal"},
-{x:192,y:338,name:"Isqui"},
-{x:189,y:407,name:"Fèmur"},
-{x:192,y:469,name:"Ròtula"},
-{x:190,y:507,name:"Tíbia"},
-{x:186,y:540,name:"Peroné"},
-{x:185,y:567,name:"Ossos del tars"},
-{x:184,y:602,name:"Metatars"},
-{x:188,y:637,name:"Falanges"},
+{x:229.65,y:24.38,w:42.71,h:25.63,name:"Frontal"},
+{x:226.28,y:47.47,w:51.70,h:70.91,name:"Nasal"},
+{x:255.30,y:78.84,w:28.10,h:33.19,name:"Pòmiul"},
+{x:229.04,y:145.68,w:35.86,h:23.90,name:"Mandíbula"},
+{x:230.27,y:181.85,w:46.48,h:22.57,name:"Estern"},
+{x:226.89,y:198.20,w:54.04,h:60.70,name:"Costelles"},
+{x:226.38,y:214.14,w:23.80,h:18.48,name:"Columna vertebral"},
+{x:298.94,y:34.60,w:51.08,h:42.50,name:"Parietal"},
+{x:298.53,y:71.08,w:47.92,h:25.33,name:"Temporal"},
+{x:295.46,y:89.88,w:48.83,h:40.56,name:"Occipital"},
 
-{x:307,y:46,name:"Parietal"},
-{x:311,y:69,name:"Temporal"},
-{x:307,y:86,name:"Occipital"},
-{x:306,y:115,name:"Vèrtebres cervicals"},
-{x:305,y:182,name:"Vèrtebres dorsals"},
-{x:305,y:256,name:"Vèrtebres lumbars"},
-{x:302,y:298,name:"Sacre"},
-{x:301,y:326,name:"Còccix"},
+{x:230.27,y:266.16,w:19.71,h:22.27,name:"Sacre"},
+{x:228.83,y:262.99,w:16.23,h:15.93,name:"Ilí"},
+{x:229.14,y:284.04,w:32.58,h:26.87,name:"Pubis"},
+{x:228.53,y:307.75,w:31.67,h:27.27,name:"Coxal"},
+{x:258.47,y:286.80,w:34.83,h:24.62,name:"Isqui"},
 
-{x:493,y:153,name:"Clavícula"},
-{x:493,y:187,name:"Omòplat"},
-{x:492,y:221,name:"Húmer"},
-{x:492,y:286,name:"Radi"},
-{x:493,y:311,name:"Cúbit"},
-{x:493,y:337,name:"Ossos de carp"},
-{x:495,y:372,name:"Metacarp"},
-{x:494,y:411,name:"Falanges"},
+{x:289.13,y:229.98,w:51.28,h:37.70,name:"Fèmur"},
+{x:306.09,y:272.29,w:36.27,h:20.83,name:"Ròtula"},
+{x:319.07,y:277.19,w:20.93,h:20.63,name:"Tíbia"},
+{x:304.86,y:294.87,w:37.18,h:23.90,name:"Peroné"},
 
-{x:654,y:41,name:"Nasals"},
-{x:649,y:77,name:"Masseter"},
-{x:667,y:116,name:"Orbicular dels llavis"},
-{x:646,y:158,name:"Digàstric"},
-{x:647,y:197,name:"Serrat"},
-{x:658,y:236,name:"Bíceps braquial"},
-{x:649,y:277,name:"Supinador"},
-{x:644,y:401,name:"Recte anterior"},
-{x:644,y:530,name:"Tibial"},
+{x:291.78,y:163.66,w:49.76,h:35.54,name:"Clavícula"},
+{x:224.75,y:357.95,w:41.48,h:28.61,name:"Omòplat"},
 
-{x:811,y:30,name:"Frontal"},
-{x:808,y:71,name:"Orbicular de l’ull"},
-{x:810,y:117,name:"Temporal"},
-{x:813,y:156,name:"Buccinador"},
-{x:812,y:197,name:"Pectorals"},
-{x:812,y:239,name:"Rectes majors"},
-{x:811,y:284,name:"Oblic major"},
-{x:814,y:321,name:"Psoas iliac"},
-{x:819,y:376,name:"Sartori"},
-{x:822,y:591,name:"Flexors i extensors"},
-
-{x:1073,y:54,name:"Esternocleidomastoïdal"},
-{x:1077,y:104,name:"Trapeci"},
-{x:1078,y:149,name:"Deltoides"},
-{x:1074,y:187,name:"Tríceps"},
-{x:1074,y:228,name:"Dorsal ample"},
-{x:1074,y:268,name:"Palmar"},
-{x:1077,y:310,name:"Flexors i extensors"},
-{x:1081,y:369,name:"Gluti"},
-{x:1082,y:430,name:"Bíceps femoral"},
-{x:1081,y:517,name:"Bessons"}
+{x:227.91,y:572.48,w:48.43,h:22.27,name:"Húmer"},
+{x:227.61,y:537.32,w:48.73,h:26.26,name:"Radi"},
+{x:224.85,y:537.73,w:18.08,h:26.66,name:"Cúbit"},
+{x:253.56,y:541.72,w:26.46,h:18.80,name:"Ossos del carp"},
+{x:226.28,y:506.05,w:66.72,h:24.21,name:"Metacarp"},
+{x:226.18,y:471.00,w:40.56,h:28.91,name:"Falanges"}
 
 ]
 
-const container=document.getElementById("inputs")
+const container = document.getElementById("inputs")
 
 labels.forEach((l,i)=>{
 
@@ -80,6 +42,9 @@ let input=document.createElement("input")
 
 input.style.left=l.x+"px"
 input.style.top=l.y+"px"
+
+input.style.width=l.w+"px"
+input.style.height=l.h+"px"
 
 input.id="q"+i
 
